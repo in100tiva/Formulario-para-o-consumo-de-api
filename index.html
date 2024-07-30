@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Informações do Aluno</title>
+</head>
+<body>
+  <div class="theme-toggle-container">
+    <button id="theme-toggle">Toggle Theme</button>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h3>Informações do Aluno</h3>
+      <p>Preencha os campos abaixo para cadastrar o aluno.</p>
+    </div>
+    <div class="card-content">
+      <div class="input-group">
+        <div class="input-container">
+          <label for="name">Nome do Aluno</label>
+          <input type="text" id="name" placeholder="Digite o nome do aluno">
+        </div>
+        <div class="input-container">
+          <label for="class">Turma</label>
+          <input type="text" id="class" placeholder="Digite a turma do aluno">
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="topic">Sugestão de Tema</label>
+        <textarea id="topic" placeholder="Digite uma sugestão de tema para Aula Compartilhada ou Super Módulo"></textarea>
+      </div>
+      <div class="input-group">
+        <div class="input-container">
+          <label>Melhores Dias da Semana</label>
+          <div class="checkbox-column">
+            <div><input type="checkbox" id="monday"><label for="monday">Segunda</label></div>
+            <div><input type="checkbox" id="tuesday"><label for="tuesday">Terça</label></div>
+            <div><input type="checkbox" id="wednesday"><label for="wednesday">Quarta</label></div>
+            <div><input type="checkbox" id="thursday"><label for="thursday">Quinta</label></div>
+            <div><input type="checkbox" id="friday"><label for="friday">Sexta</label></div>
+          </div>
+        </div>
+        <div class="input-container">
+          <label>Melhores Horários</label>
+          <div class="checkbox-column">
+            <div><input type="checkbox" id="morning"><label for="morning">Manhã</label></div>
+            <div><input type="checkbox" id="afternoon"><label for="afternoon">Tarde</label></div>
+            <div><input type="checkbox" id="evening"><label for="evening">Noite</label></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button id="submit-btn" type="submit">Cadastrar Aluno</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
